@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 
 const Footer = () => {
+    const hero_logo="/images/blog_logo.svg"
     const iconStyle = 'p-2 rounded-md hover:bg-sec hover:scale-110 transition-transform cursor-pointer';
     const SocialIcon = ({ icon }) => {
         return <span className={iconStyle}><i className={icon}></i></span>
@@ -11,7 +12,7 @@ const Footer = () => {
     }
     const hoverLinkStyle = 'hover:text-fg1 hover:cursor-pointer';
     return (
-        <footer className=' bg-nav border-t mt-1 border-white/10 text-center   w-full py-6'>
+        <footer className=' bg-nav border-t  text-center   w-full py-6'>
 
             <div className='max-w-7xl mx-auto px-6'>
                 {/* footer hero */} 
@@ -19,7 +20,7 @@ const Footer = () => {
 
 
                     <div className='flex items-center justify-center gap-2 '><span>
-                        <Image className='text-red-200' src="/images/blog_logo.svg" alt="logo" width={30} height={30} />
+                        <Image className='text-red-200' src={hero_logo} alt="logo" width={30} height={30} />
                     </span> <h2 className='text-2xl font-semibold'>Feather</h2></div>
                     <p className='text-sm text-fg2 mt-2'>Thoughtful articles on tech, design & productivity</p>
 

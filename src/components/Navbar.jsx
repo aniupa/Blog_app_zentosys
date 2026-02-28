@@ -10,7 +10,7 @@ const Navbar = () => {
     setTheme(theme === 'dark' ? "light" : "dark")
   }
   return (
-    <nav className='flex justify-between p-2 bg-nav sticky top-0 z-1 border-b shadow-red-500' >
+    <nav className='flex justify-between p-2 bg-nav sticky top-0 z-1 border-b shadow-red-500 p-2' >
       <Image className='text-red-200' src="/images/blog_logo.svg" alt="logo" width={30} height={30}/>
       <div className='flex gap-5 mr-2'>
         <span>Blogs</span>
