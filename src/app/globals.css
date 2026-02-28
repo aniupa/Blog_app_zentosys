@@ -1,57 +1,62 @@
 @import 'tailwindcss';
-
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
 :root {
   /* Brand (indigo-600 / teal-500) */
-  --primary: indigo;        
-   --secondary: teal;      
+  --primary: indigo;
+  --secondary: teal;
 
   /* Actions */
   --btnP: #4f46e5;
-  --success: #16a34a;        /* green-600 */
-  --danger: #dc2626;         /* red-600 */
+  --success: #16a34a; /* green-600 */
+  --danger: #dc2626; /* red-600 */
 
   /* Text */
-  --foreground1: #0f172a;    /* slate-900 */
-  --foreground2: #64748b;    /* slate-500 */
+  --foreground1: #0f172a; /* slate-900 */
+  --foreground2: #64748b; /* slate-500 */
 
   /* Backgrounds */
-  --background1: #fefefe;    /* white */
-  --background2: #fdfaf6;    /* slate-100 */
+  --background1: #fefefe; /* white */
+  --background2: #fdfaf6; /* slate-100 */
   --card: #ffffff;
 
   /* Navigation */
   --nav: #fefefe;
 
   /* Borders */
-  --border: #e2e8f0;         /* slate-200 */
+  --border: #e2e8f0; /* slate-200 */
 
   /* Effects */
   --shadow: rgba(15, 23, 42, 0.08);
 }
 .dark {
   /* Brand (indigo-400 / teal-400) */
-  --primary: #818cf8;        /* indigo-400 */
-  --secondary: #2dd4bf;      /* teal-400 */
+  --primary: #818cf8; /* indigo-400 */
+  --secondary: #2dd4bf; /* teal-400 */
 
   /* Actions */
   --btnP: #818cf8;
-  --success: #4ade80;        /* green-400 */
-  --danger: #f87171;         /* red-400 */
+  --success: #4ade80; /* green-400 */
+  --danger: #f87171; /* red-400 */
 
   /* Text */
-  --foreground1: #e2e8f0;    /* slate-200 */
-  --foreground2: #94a3b8;    /* slate-400 */
+  --foreground1: #e2e8f0; /* slate-200 */
+  --foreground2: #94a3b8; /* slate-400 */
 
   /* Backgrounds */
-  --background1: #020617;    /* slate-950 */
-  --background2: #0f172a;    /* slate-900 */
-  --card: #111827;           /* gray-900 */
+  --background1: #020617; /* slate-950 */
+  --background2: #0f172a; /* slate-900 */
+  --card: #111827; /* gray-900 */
 
   /* Navigation */
   --nav: #020617;
 
   /* Borders */
-  --border: #1e293b;         /* slate-800 */
+  --border: #1e293b; /* slate-800 */
 
   /* Effects */
   --shadow: rgba(0, 0, 0, 0.6);
@@ -65,7 +70,6 @@
   --color-card: var(--card);
   --color-pri: var(--primary);
   --color-sec: var(--secondary);
-  
 
   --color-fg1: var(--foreground1);
   --color-fg2: var(--foreground2);

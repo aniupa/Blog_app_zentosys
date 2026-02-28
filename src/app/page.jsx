@@ -12,7 +12,7 @@ const page = async () => {
     <div className='flex flex-col min-h-screen text-fg1 '>
       <Navbar />
       <Header />
-      <section className='flex flex-col flex-1 text-center bg-background2'>
+      <main className='flex flex-col flex-1 text-center bg-background2'>
         <span className='font-bold text-fg1'>Blogs</span>
         <div className='sm:grid grid-cols-4 gap-2 mx-5'>
 
@@ -21,7 +21,7 @@ const page = async () => {
           )) : <>loading...</>}
         </div>
 
-      </section>
+      </main>
       <Footer />
 
     </div>
