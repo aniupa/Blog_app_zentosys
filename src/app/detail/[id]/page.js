@@ -1,0 +1,38 @@
+import BlogDetailCard from '@/components/BlogDetailCard';
+import Header from '@/components/Header';
+import { getBlogByID } from '@/lib/getBlogs';
+export default async function Detail({ params }) {
+  const { id } = await params;
+
+  const blog = await getBlogByID(id);
+
+  return (
+    <>
+      {/* <Header
+       
+        // description={`${blog.user.name} • published on ${blog.readable_publish_date} • Reading time  ${blog.reading_time_minutes} mins`}
+      description={<div></div>}
+      /> */}
+      <Header title={blog.title}>
+        <div>{`${blog.user.name} • published on ${blog.readable_publish_date} • Reading time  ${blog.reading_time_minutes} mins`}</div>
+      </Header>
+
+      <main>
+        <BlogDetailCard
+        profile_image={blog.user.profile_image}
+        author={blog.user.name}
+        published_on={blog.readable_publish_date}
+        Reading_time={blog.reading_time_minutes}
+          img={blog.social_image}
+          title={blog.title}
+          content={blog.body_markdown}
+          tags={blog.tag_list}
+          like={blog.positive_reactions_count}
+          comments={blog.comments_count}
+          share={blog.public_reactions_count}
+          id={blog.id}
+        />
+      </main>
+    </>
+  );
+}

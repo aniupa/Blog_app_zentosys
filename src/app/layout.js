@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+
 import Theme_Provider from '@/utils/ThemeProvider';
 
 const geistSans = Geist({
@@ -19,15 +22,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning >
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
       </head>
-      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased ` }>
+      <body
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+      >
+        
+          <Navbar />
+        
         <Theme_Provider>{children}</Theme_Provider>
+        <Footer />
       </body>
     </html>
   );
