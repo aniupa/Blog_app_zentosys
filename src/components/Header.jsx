@@ -7,15 +7,15 @@ const Header = ({title,description,welcome,children}) => {
                { "Welcome to" }
             </p>}
 
-            <h1 className="text-5xl font-bold mt-3 max-w-3xl leading-tight">
+            <h1 className="text-5xl text-fg1 font-bold mt-3 max-w-3xl leading-tight">
                { title || "Stories, Ideas & Insights That Actually Matter"}
             </h1>
 
-            <div className="mt-6 max-w-2xl text-lg opacity-80">
-               {/* { description ||` Discover thoughtful articles on technology, creativity,
+            <div className="mt-6 max-w-2xl text-fg2 text-lg opacity-80">
+               
+                 { children ||` Discover thoughtful articles on technology, creativity,
                 productivity, and modern digital life — written to inform,
-                inspire, and challenge how you think.`} */}
-                {children}
+                inspire, and challenge how you think.`}
             </div>
 
           

@@ -29,14 +29,11 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body
-        suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-      >
-        
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
+        <Theme_Provider>
           <Navbar />
-        
-        <Theme_Provider>{children}</Theme_Provider>
+          {children}
+        </Theme_Provider>
         <Footer />
       </body>
     </html>

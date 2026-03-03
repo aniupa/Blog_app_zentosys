@@ -1,12 +1,12 @@
 import Image from 'next/image'
-
-
+  const iconStyle = 'p-2 rounded-md hover:bg-sec hover:scale-110 transition-transform cursor-pointer text-fg1';
+ 
+  export const SocialIcon = ({ icon }) => {
+        return <span className={iconStyle }><i className={icon}></i></span>
+    }
 const Footer = () => {
     const hero_logo="/images/blog_logo.svg"
-    const iconStyle = 'p-2 rounded-md hover:bg-sec hover:scale-110 transition-transform cursor-pointer';
-    const SocialIcon = ({ icon }) => {
-        return <span className={iconStyle}><i className={icon}></i></span>
-    }
+  
     const SectionHeaders = ({ title }) => {
         return <span className='font-semibold text-fg1 mb-3 block'>{title}</span>
     }
@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className=' bg-nav border-t  text-center   w-full py-6'>
 
-            <div className='max-w-7xl mx-auto px-6'>
+            <div className='max-w-7xl text-fg1 mx-auto px-6'>
                 {/* footer hero */} 
                 <div className='text-center'>
 

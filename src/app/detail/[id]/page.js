@@ -8,11 +8,7 @@ export default async function Detail({ params }) {
 
   return (
     <>
-      {/* <Header
-       
-        // description={`${blog.user.name} • published on ${blog.readable_publish_date} • Reading time  ${blog.reading_time_minutes} mins`}
-      description={<div></div>}
-      /> */}
+    
       <Header title={blog.title}>
         <div>{`${blog.user.name} • published on ${blog.readable_publish_date} • Reading time  ${blog.reading_time_minutes} mins`}</div>
       </Header>
