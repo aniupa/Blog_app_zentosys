@@ -1,5 +1,4 @@
 import BlogDetailCard from '@/components/BlogDetailCard';
-import Header from '@/components/Header';
 import { getBlogByID } from '@/lib/getBlogs';
 export default async function Detail({ params }) {
   const { id } = await params;
@@ -9,9 +8,6 @@ export default async function Detail({ params }) {
   return (
     <>
     
-      <Header title={blog.title}>
-        <div>{`${blog.user.name} • published on ${blog.readable_publish_date} • Reading time  ${blog.reading_time_minutes} mins`}</div>
-      </Header>
 
       <main>
         <BlogDetailCard

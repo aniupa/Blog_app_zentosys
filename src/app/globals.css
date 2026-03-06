@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 * {
   transition:
     background-color 0.3s ease,
@@ -7,7 +8,7 @@
 }
 :root {
   /* Brand (indigo-600 / teal-500) */
-  --primary: indigo;
+  --primary: #4f46e5;
   --secondary: teal;
 
   /* Actions */
@@ -70,6 +71,7 @@
   --color-card: var(--card);
   --color-pri: var(--primary);
   --color-sec: var(--secondary);
+  --color-border: var(--border);
 
   --color-fg1: var(--foreground1);
   --color-fg2: var(--foreground2);
@@ -86,6 +88,6 @@
 
 body {
   background: var(--background1);
-  color: var(--foreground);
+  color: var(--foreground1);
   font-family: Arial, Helvetica, sans-serif;
 }
